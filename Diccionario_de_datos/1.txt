@@ -1,0 +1,8 @@
+Matricula	Nombre	A_Paterno	A_Materno	Folio_Gpo
+4	Luis	Antonio	Sánchez	0
+5	Pedro	Torrez	Gonzalez	0
+6	Agustín	Parra	Vega	0
+7	Isaac	Cortés	Lagunas	0
+8	Alejandro	Villega	Saéz	0
+9	Pablo	Escobar	Hernández	0
+10	Felipe	Hortiales	Gutiérrez	0

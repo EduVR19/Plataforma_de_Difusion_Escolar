@@ -1,0 +1,95 @@
+1: Inicio de sesión 
+	If se entra a la página web
+		Then Mostrar los campos de inicio de sesión para los padres (usuario normal), los profesores (privilegios) o director (mayor privilegio). 
+	Usuario 
+	Contraseña 
+		Else 
+			If contraseña o usuario incorrectos 
+				Then no se puede ingresar al sistema
+					Else ingresando al sistema
+						End if 
+
+2: Alumnos: alta, baja, consulta
+		If se quiere registrar un nuevo alumno 
+			Then ingresar en la pestaña alumnos y Hacer clic en Nuevo después se muestran los campos de datos que se deberán rellenar
+		Nombre 
+		A_Paterno
+		A_Materno
+		Sexo
+		Fecha_Nac
+		Lugar_Nac
+		CURP
+		Domicilio
+		Telefono
+			Then Rellenar dichos campos y hacer Clic en botón Aceptar
+			Else if No desea continuar el registro hacer clic en Cancelar
+			End if
+				If se quieren consultar los alumnos o buscar por medio de su id
+				Then ingresar a la pestaña alumnos, pulsar botón buscar alumnos introducir su id  y seguidamente se muestran sus datos
+			End if
+				If se desea eliminar un alumno 
+				Then  ingresar a la pestaña Alumnos pulsar botón Eliminar seleccionar por medio de un checklist ID por medio de búsqueda y hacer clic en Aceptar
+				Else if se desea cancelar la eliminación del alumno, pulsar botón cancelar  retroceder en el navegador (pagina).
+				End if  
+
+3: Responsables: capturar información de los padres o tutores
+	If si quiere añadir un Responsable
+			Then hacer clic en añadir y rellenar los campos.
+		Nombre_Padre
+		Nombre_Madre
+		Nombre_Tutor
+		Profesion_Padre
+		Profesion_Madre
+		Profesion_Tutor
+		Lug_Profesion_Padre
+		Lug_Profesion_Madre
+		Lug_Profesion_Tutor
+		Tel_Padre
+		Tel_Madre
+		Tel_Tutor
+			Seguidamente hacer clic en aceptar
+			Else if 
+			No se desea añadir otro Responsable hacer clic en cancelar
+			End if
+			If se desea consultar o buscar algún responsable 
+			Then hacer clic en la pestaña Responsables  lo cual muestra todos los campos de todos los Responsables o buscar por medio de su ID
+			End if
+			
+4: Calificaciones: captura de calificaciones
+	if se desean capturar calificaciones 
+		Then Hacer clic en la pestaña Calificaciones y pulsar el botón añadir se muestran los campos los cuales deberán ser 
+		Id_Alumno
+		Nombre
+		Asignatura
+		Calificacion
+		Seguidamente hacer clic en aceptar
+			Else if 
+			No se desea capturar más calificaciones hacer clic en cancelar
+			End if
+			If se desea consultar calificaiones 
+			Then hacer clic en la pestaña Calificaiones  lo cual muestra todos los campos antes mencionados, con la opción de poder filtrar los registros.
+			End if
+
+5: Profesores: alta y baja de profesores 
+		If si quiere añadir un profesor
+			Then hacer clic en añadir y rellenar los campos. Muy importante definir el puesto ya que aquí se determinan los privilegios
+		Nombre
+		Domicilio
+		CP
+		Tel
+		Cel
+		Fecha_Ingreso_SEP
+		Fecha_Ingreso_Zona
+		Fecha_Ingreso_Escuela
+		Lug_Profesion_Padre
+		Clave
+		CURP
+		RFC
+		Grado_Estudios
+			Seguidamente hacer clic en aceptar
+			Else if 
+			No se desea añadir otro profesor hacer clic en cancelar
+			End if
+			If se desea consultar o buscar algún profesor 
+			Then hacer clic en la pestaña Profesores  lo cual muestra todos los campos de todos los Profesores o buscar por medio de su ID
+			End if

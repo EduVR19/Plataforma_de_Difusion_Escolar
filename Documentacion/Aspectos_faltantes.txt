@@ -1,0 +1,33 @@
++ Investigación
+	- SIASE UANL link: https://www.uanl.mx/faq/que-es-siase/
+	- SIASE UNAM link: https://escolares.politicas.unam.mx/sitio_sse/inscord/index.php
+	- SIASE UJAT link: https://www.sel.ujat.mx/Seguridad/logIn
+	- Sistema de información del studiante (SIS) FEDENA: https://projectfedena.org/about
+		1.-Login: http://eduardoreynav.sandbox.fedena.com/
+		2.-Ingresar como director Username: admin Password: admin123
+		3.-Ingresar como maestro Username: E1 Password: E1123
+		4.-Ingresar como padre Username: pS1 Password: pS1123
+		5.-Ingresar como alumno Username: S1 Password: S1123
+
++ Introducción
+	- Redactar con base a la investigación y hacer referencias de los ejemplos de Sistemas de información del Estudiante (SIASE, SIS) y mencionar sus mejores aspectos (Organización del diseño y colores utilizados, a quién va dirigido si a educación básica o superior). 
+	- Redactar fin de introducción: ''En base a lo investigado anteriormente sobre las diferentes plataformas nos dimos cuenta que va a ser un fortalecimiento para el proyecto a realizar donde _ en el cual se cuenta con los requerimientos mostrados a continuación:''
+
++ Requerimientos del cliente
+	- Redactar la entrada: ''El cliente _ en la escuela _ con la fecha _ comentó que es necesario tener: _. Lo cual se puede observar en la imagen #_''
+
++ Requerimientos complementarios
+	- Redactar la entrada: ''El cliente mencionó que principalmente hay que tener _''
+	- Redactar lo que podemos agregar: Hacer mención de aspectos que podemos incluir en base a la investigación: ''Además de lo que el cliente necesita se puede agregrar _''
+
++ Español estructurado
+	- Secuencia lógica del programa.
+	- Hacer las relaciones por medio de redacción y utilizar sentencias de decisión (IF, ELSE-IF, THEN).
+
++ Diagrama Entidad-Relación
+	- Se realiza en base al español estructurado.
+	- Entidades: 
+		1.-Director: Acceso a todos los grupos e información de alumnos y maestros.
+		1.-Maestro: Acceso a su grupo e información de los alumnos de su único grupo.
+		1.-Padres: Acceso a la información de un único alumno o alumnos (hijos).
+		1.-Alumno: Contar con todos los atributos necesarios que conformarán su historial académico.

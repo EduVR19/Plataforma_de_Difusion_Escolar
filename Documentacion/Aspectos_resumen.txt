@@ -1,0 +1,10 @@
+Las primeras 3 líneas ( es la investigación que les decía que buscaran y formaba la introducción de tu documentación actual),
+
+Después que es lo que vas a realizar
+( aquí van a escribir implícitamente el objetivo de su proyecto Don escribir la palabra OBJETIVO, que también ya está hecho, posteriormente redactar que se espera (los polimorfismos, o los reportes que se esperan ), 
+
+después se redacta como vas hacer para solucionarlo. Con qué herramientas (comentarlas), 
+
+después escribir resultados (es lo que pide el cliente que tenga que realizar el proyecto recuerda este puede ser página, herramienta, juego, sistema etc) 
+
+por último  Conclusiónes y redactarlas (si todavía no está terminado el proyecto se escribe en futuro que se espera que llegue a cumplir a realizar)
