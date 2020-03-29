@@ -1,0 +1,115 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	width: 90%;
+	height: 700px;
+	margin: auto;
+	background: white;
+}
+
+#encabezado{
+	width: 100%;
+	height: 30%;
+}
+
+header{
+	width: 60%;
+	height: 100%;
+	background: red;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#login{
+	width: 40%;
+	height: 100%;
+	background: purple;
+	float: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#main{
+	width: 100%;
+	height: 60%;
+	background: blue;
+	clear: both;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.galeria{
+	width: 40%;
+	height: 80%;
+	float: right;
+	background: yellow;
+	margin-left: 50px;
+	margin-right: 50px;
+	
+}
+
+footer{
+	width: 100%;
+	height: 10%;
+	background: green;
+}
+
+h1{
+	text-align: middle;
+}
+
+#titulo{
+	width: 60%;
+	height: 100%;
+	background: maroon;
+	float: left;
+	text-align: middle;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+#logo{
+	width: 20%;
+	float: left;
+	background: blue;
+}
+
+#logo_2{
+	width: 20%;
+	float: right;
+	background: blue;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li{
+  float: left;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #111;
+}

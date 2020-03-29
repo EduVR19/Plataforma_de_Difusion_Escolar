@@ -1,10 +1,12 @@
-Las primeras 3 líneas ( es la investigación que les decía que buscaran y formaba la introducción de tu documentación actual),
+1.-Las primeras 3 líneas ( es la investigación que les decía que buscaran y formaba la introducción de tu documentación actual),
 
-Después que es lo que vas a realizar
-( aquí van a escribir implícitamente el objetivo de su proyecto Don escribir la palabra OBJETIVO, que también ya está hecho, posteriormente redactar que se espera (los polimorfismos, o los reportes que se esperan ), 
+2.-Después que es lo que vas a realizar
+( aquí van a escribir implícitamente el objetivo de su proyecto Don escribir la palabra OBJETIVO, que también ya está hecho, 
 
-después se redacta como vas hacer para solucionarlo. Con qué herramientas (comentarlas), 
+3.-posteriormente redactar que se espera (los polimorfismos, o los reportes que se esperan ), 
 
-después escribir resultados (es lo que pide el cliente que tenga que realizar el proyecto recuerda este puede ser página, herramienta, juego, sistema etc) 
+4.-después se redacta como vas hacer para solucionarlo. Con qué herramientas (comentarlas), 
 
-por último  Conclusiónes y redactarlas (si todavía no está terminado el proyecto se escribe en futuro que se espera que llegue a cumplir a realizar)
+5.-después escribir resultados (es lo que pide el cliente que tenga que realizar el proyecto recuerda este puede ser página, herramienta, juego, sistema etc) 
+
+6.-por último  Conclusiónes y redactarlas (si todavía no está terminado el proyecto se escribe en futuro que se espera que llegue a cumplir a realizar)

@@ -1,0 +1,117 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	width: 90%;
+	height: 885px;
+	margin: auto;
+	background: white;
+}
+
+#encabezado {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	width: 60%;
+	height: 100%;
+	background: red;
+	position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#main {
+	width: 100%;
+	height: 80%;
+	background: blue;
+	clear: both;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu { 
+	width: 20%;
+	height: 100%;
+	background: green;	
+	float: left;
+}
+
+#panel {
+	width: 80%;
+	height: 100%;
+	float: right;
+	background: yellow;
+}
+
+
+#titulo {
+	width: 60%;
+	height: 100%;
+	background: maroon;
+	float: left;
+	text-align: middle;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+#logo {
+	width: 20%;
+	float: left;
+	background: blue;
+}
+
+#logo_2 {
+	width: 20%;
+	float: right;
+	background: blue;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+  margin-top: 6%;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+  
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
