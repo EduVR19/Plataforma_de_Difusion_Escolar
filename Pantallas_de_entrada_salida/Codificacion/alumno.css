@@ -16,12 +16,14 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: #FFFBCC;
+	border: 1px solid black;
 }
 
 header {
 	width: 60%;
 	height: 100%;
-	background: red;
+	
 	position: center;
 	display: flex;
 	justify-content: center;
@@ -32,7 +34,8 @@ header {
 #main {
 	width: 100%;
 	height: 80%;
-	background: blue;
+	background: #FFFBCC;
+	border: 1px solid black;
 	clear: both;
 	display: flex;
 	justify-content: center;
@@ -42,7 +45,6 @@ header {
 #menu { 
 	width: 20%;
 	height: 100%;
-	background: green;	
 	float: left;
 }
 
@@ -50,14 +52,23 @@ header {
 	width: 80%;
 	height: 100%;
 	float: right;
-	background: yellow;
 }
 
+form{
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+.table .table-bordered {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 
 #titulo {
 	width: 60%;
 	height: 100%;
-	background: maroon;
 	float: left;
 	text-align: middle;
 }
@@ -76,7 +87,6 @@ img {
 #logo_2 {
 	width: 20%;
 	float: right;
-	background: blue;
 }
 
 ul {
@@ -107,8 +117,8 @@ li:last-child {
 }
 
 li a.active {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #FFFBCC;
+  color: black;
 }
 
 li a:hover:not(.active) {

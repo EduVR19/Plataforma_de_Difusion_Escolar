@@ -13,12 +13,13 @@ body{
 #encabezado{
 	width: 100%;
 	height: 30%;
+	background: #FFFBCC;
+	border: 1px solid black;
 }
 
 header{
 	width: 60%;
 	height: 100%;
-	background: red;
 	float: left;
 	display: flex;
 	justify-content: center;
@@ -26,19 +27,22 @@ header{
 }
 
 #login{
-	width: 40%;
+	width: 39%;
 	height: 100%;
-	background: purple;
 	float: right;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-left: 1px solid black;
 }
 
 #main{
 	width: 100%;
 	height: 60%;
-	background: blue;
+	background: #FFFBCC;
+	border: 1px solid black;
+	border-top: none;
+	border-bottom: none;
 	clear: both;
 	display: flex;
 	justify-content: center;
@@ -49,16 +53,22 @@ header{
 	width: 40%;
 	height: 80%;
 	float: right;
-	background: yellow;
+	background: #fff266;
+	border: 1px solid black;
 	margin-left: 50px;
 	margin-right: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
 	
 }
 
 footer{
 	width: 100%;
 	height: 10%;
-	background: green;
+	background: #FFFBCC;
+	border: 1px solid black;
 }
 
 h1{
@@ -68,7 +78,6 @@ h1{
 #titulo{
 	width: 60%;
 	height: 100%;
-	background: maroon;
 	float: left;
 	text-align: middle;
 }
@@ -81,13 +90,13 @@ img{
 #logo{
 	width: 20%;
 	float: left;
-	background: blue;
+	
 }
 
 #logo_2{
 	width: 20%;
 	float: right;
-	background: blue;
+	
 }
 
 ul{
