@@ -61,7 +61,7 @@ form{
 	margin-bottom: 2%;
 }
 
-.table .table-bordered {
+table, tr, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -81,7 +81,6 @@ img {
 #logo {
 	width: 20%;
 	float: left;
-	background: blue;
 }
 
 #logo_2 {
