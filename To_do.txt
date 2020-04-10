@@ -1,0 +1,7 @@
+01:02 p. m. 10/04/2020
+	- Por medio de boostrap se modificó la maquetación de la plataforma y se añadieron 4 librerías de diseño.
+	- Cree un datatable con el que se logró el CRUD de los alumnos, hacer el registro, leer los datos, actualizarlos y borrarlos (esto vendría siendo la ventana de admin) faltaría hacer lo mismo pero ahora con los maestros.
+	- Se crearon respaldos de bases de datos y en esta acual en la ventana de login sólo se conservaron 10 atributos
+
+	- Modificar los bocetos de salida, el menú ahora es horizontal
+	- Falta crear las sesiones por medio del login y mostrar los datos según el alumno: que se genere una contraseña segura cada vez que se realiza un registro.
