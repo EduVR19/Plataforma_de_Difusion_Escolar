@@ -5,3 +5,11 @@
 
 	- Modificar los bocetos de salida, el menú ahora es horizontal
 	- Falta crear las sesiones por medio del login y mostrar los datos según el alumno: que se genere una contraseña segura cada vez que se realiza un registro.
+
+03:14 p. m. 19/04/2020
+	- Se terminaron las 2 ventanas junto con la tabla de dtos de Alumno y Maestro (estas 2 serían de administrador ya que es el CRUD de alumnos y maestros).
+	- Falta crear las sesiones por medio del login y mostrar los datos según el alumno: que se genere una contraseña segura cada vez que se realiza un registro.
+
+04:10 p. m. 20/04/2020
+	- Se termino la interfaz de login
+	- En la documentacon se corrigio el modelo entidad-relacion, modelo relaciona, diccionarios de datos, pantallas E/S, se añadió las interfaces creadas hasta el momento (login, admin) y se agrego el pronostico de tiempos

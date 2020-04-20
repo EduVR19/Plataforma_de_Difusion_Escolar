@@ -39,7 +39,9 @@
 		  </ul>
 		</nav>
 	</div>
+	<!--*********************FIN DE NAVBAR********************-->
 
+	<!--*****************INICIO DE TABLA DE DATOS************-->
 	<div class="container.fluid">
 		<div class="row">
 			<div class="col-sm-12">
@@ -61,7 +63,7 @@
 			</div>
 		</div>
 	</div>
-	<!--*********************FIN DE NAVBAR********************-->
+	<!--*****************FIN DE TABLA DE DATOS************-->
 
 
 	<!-- Modal (Ventana emergente) -->
