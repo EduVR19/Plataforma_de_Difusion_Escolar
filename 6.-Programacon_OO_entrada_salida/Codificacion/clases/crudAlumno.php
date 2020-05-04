@@ -1,19 +1,19 @@
 <?php 
 
-	class crudAlumno{
+	class crudAlumno
+	{
 		public function agregarAlumno($datos){
 			$obj= new conectar();
 			$conexion=$obj->conexion();
-
+			$psswd = substr( md5(microtime()), 1, 8);
 			$sql="INSERT into alumno (nombre,
-									a_paterno,
-									a_materno,
 									sexo,
 									fecha_nac,
 									lugar_nac,
 									curp,
 									domicilio,
-									telefono)
+									telefono,
+									contraseña)
 									values ('$datos[0]',
 											'$datos[1]',
 											'$datos[2]',
@@ -21,8 +21,7 @@
 											'$datos[4]',
 											'$datos[5]',
 											'$datos[6]',
-											'$datos[7]',
-											'$datos[8]')";
+											'$psswd')";
 			return mysqli_query($conexion,$sql);
 		}
 
@@ -32,14 +31,13 @@
 
 			$sql="SELECT id_alumno,
 							nombre,
-							a_paterno,
-							a_materno,
 							sexo,
 							fecha_nac,
 							lugar_nac,
 							curp,
 							domicilio,
-							telefono
+							telefono,
+							contraseña
 					from alumno 
 					where id_alumno='$idalumno'";
 			$result=mysqli_query($conexion,$sql);
@@ -48,14 +46,13 @@
 			$datos=array(
 				'id_alumno' => $ver[0],
 				'nombre' => $ver[1],
-				'a_paterno' => $ver[2],
-				'a_materno' => $ver[3],
-				'sexo' => $ver[4],
-				'fecha_nac' => $ver[5],
-				'lugar_nac' => $ver[6],
-				'curp' => $ver[7],
-				'domicilio' => $ver[8],
-				'telefono' => $ver[9]
+				'sexo' => $ver[2],
+				'fecha_nac' => $ver[3],
+				'lugar_nac' => $ver[4],
+				'curp' => $ver[5],
+				'domicilio' => $ver[6],
+				'telefono' => $ver[7],
+				'contraseña' => $ver[8]
 				);
 			return $datos;
 		}
@@ -65,15 +62,14 @@
 			$conexion=$obj->conexion();
 
 			$sql="UPDATE alumno set        nombre='$datos[0]',
-										a_paterno='$datos[1]',
-										a_materno='$datos[2]',
-											 sexo='$datos[3]',
-										fecha_nac='$datos[4]',
-										lugar_nac='$datos[5]',
-											 curp='$datos[6]',
-										domicilio='$datos[7]',
-										 telefono='$datos[8]'
-						where id_alumno='$datos[9]'";
+											 sexo='$datos[1]',
+										fecha_nac='$datos[2]',
+										lugar_nac='$datos[3]',
+											 curp='$datos[4]',
+										domicilio='$datos[5]',
+										 telefono='$datos[6]',
+										 contraseña='$datos[8]'
+						where id_alumno='$datos[7]'";
 			return mysqli_query($conexion,$sql);
 		}
 		public function eliminarAlumno($idalumno){
@@ -84,5 +80,7 @@
 			return mysqli_query($conexion,$sql);
 		}
 	}
+
+
 
  ?>

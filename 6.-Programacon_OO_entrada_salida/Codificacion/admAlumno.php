@@ -33,9 +33,9 @@
 		<nav class="navbar navbar-expand-sm bg-danger navbar-dark">
 		  <ul class="navbar-nav">
 		    <li class="nav-item active">
-		      <a class="nav-link" href="#">Alumnos</a>
+		      <a class="nav-link" href="admAlumno.php">Alumnos</a>
 		   	<li class="nav-item active">
-		      <a class="nav-link" href="#">Maestros</a>
+		      <a class="nav-link" href="admMaestro.php">Maestros</a>
 		  </ul>
 		</nav>
 	</div>
@@ -46,9 +46,11 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="card text-left">
-					<div class="card-header">
-						Datos de alumnos
-					</div>
+					<center>
+						<div class="card-header" >
+							Datos de alumnos
+						</div>
+					</center>
 					<div class="card-body">
 						<span class="btn btn-primary" data-toggle="modal" data-target="#agregarnuevosdatosmodal">
 							Agregar nuevo <span class="fa fa-plus-circle"></span>
@@ -57,7 +59,7 @@
 						<div id="tablaDatatable"></div>
 					</div>
 					<div class="card-footer text-muted">
-						By: EVRV
+						
 					</div>
 				</div>
 			</div>
@@ -80,10 +82,6 @@
 					<form id="frmnuevo">
 						<label>nombre</label>
 						<input type="text" class="form-control input-sm" id="nombre" name="nombre">
-						<label>a_paterno</label>
-						<input type="text" class="form-control input-sm" id="a_paterno" name="a_paterno">
-						<label>a_materno</label>
-						<input type="text" class="form-control input-sm" id="a_materno" name="a_materno">
 						<label>sexo</label>
 						<input type="text" class="form-control input-sm" id="sexo" name="sexo">
 						<label>fecha_nac</label>
@@ -123,10 +121,6 @@
 						<input type="text" hidden="" id="idalumno" name="idalumno">
 						<label>nombreU</label>
 						<input type="text" class="form-control input-sm" id="nombreU" name="nombreU">
-						<label>a_paternoU</label>
-						<input type="text" class="form-control input-sm" id="a_paternoU" name="a_paternoU">
-						<label>a_maternoU</label>
-						<input type="text" class="form-control input-sm" id="a_maternoU" name="a_maternoU">
 						<label>sexoU</label>
 						<input type="text" class="form-control input-sm" id="sexoU" name="sexoU">
 						<label>fecha_nacU</label>
@@ -139,6 +133,8 @@
 						<input type="text" class="form-control input-sm" id="domicilioU" name="domicilioU">
 						<label>telefonoU</label>
 						<input type="text" class="form-control input-sm" id="telefonoU" name="telefonoU">
+						<label>ContraseñaU</label>
+						<input type="text" class="form-control input-sm" id="contraseñaU" name="contraseñaU">
 						
 					</form>
 				</div>
@@ -165,6 +161,7 @@
 				success:function(r){
 					if(r==1){
 						$('#frmnuevo')[0].reset();
+						
 						$('#tablaDatatable').load('tablaAlumno.php');
 						alertify.success("Se agregó exitosamente");
 					}else{
@@ -211,14 +208,13 @@
 				datos=jQuery.parseJSON(r);
 				$('#idalumno').val(datos['id_alumno']);
 				$('#nombreU').val(datos['nombre']);
-				$('#a_paternoU').val(datos['a_paterno']);
-				$('#a_maternoU').val(datos['a_materno']);
 				$('#sexoU').val(datos['sexo']);
 				$('#fecha_nacU').val(datos['fecha_nac']);
 				$('#lugar_nacU').val(datos['lugar_nac']);
 				$('#curpU').val(datos['curp']);
 				$('#domicilioU').val(datos['domicilio']);
 				$('#telefonoU').val(datos['telefono']);
+				$('#contraseñaU').val(datos['contraseña']);
 			}
 		});
 	}

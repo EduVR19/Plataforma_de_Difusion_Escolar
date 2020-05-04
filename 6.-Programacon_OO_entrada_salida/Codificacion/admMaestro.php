@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title></title>
@@ -33,9 +33,9 @@
 		<nav class="navbar navbar-expand-sm bg-danger navbar-dark">
 		  <ul class="navbar-nav">
 		    <li class="nav-item active">
-		      <a class="nav-link" href="#">Alumnos</a>
+		      <a class="nav-link" href="admAlumno.php">Alumnos</a>
 		   	<li class="nav-item active">
-		      <a class="nav-link" href="#">Maestros</a>
+		      <a class="nav-link" href="admMaestro.php">Maestros</a>
 		  </ul>
 		</nav>
 	</div>
@@ -44,18 +44,17 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="card text-left">
-					<div class="card-header">
-						Datos de maestros
-					</div>
+					<center>
+						<div class="card-header" >
+							Datos de maestros
+						</div>
+					</center>
 					<div class="card-body">
 						<span class="btn btn-primary" data-toggle="modal" data-target="#agregarnuevosdatosmodal">
 							Agregar nuevo <span class="fa fa-plus-circle"></span>
 						</span>
 						<hr>
 						<div id="tablaDatatable"></div>
-					</div>
-					<div class="card-footer text-muted">
-						By: EVRV
 					</div>
 				</div>
 			</div>

@@ -15,7 +15,8 @@ fecha_ingreso_escuela,
 clave,
 curp,
 rfc,
-grado_estudios
+grado_estudios,
+contraseña
 from maestro";
 $result=mysqli_query($conexion,$sql);
 ?>
@@ -27,34 +28,39 @@ $result=mysqli_query($conexion,$sql);
                         <table class="table table-sm table-hover table-condensed table-bordered" id="iddatatable">
 		<thead style="background-color: #dc3545;color: white; font-weight: bold;">
 			<tr>
-				<td>nombre</td>
-				<td>cp</td>
-				<td>telefono</td>
-				<td>correo</td>
-				<td>fecha_ingreso_sep</td>
-				<td>fecha_ingreso_zona</td>
-				<td>fecha_ingreso_escuela</td>
-				<td>clave</td>
-				<td>curp</td>
-				<td>rfc</td>
-				<td>grado_estudios</td>
+				<td>Matricula</td>
+				<td>Nombre</td>
+				<td>CP</td>
+				<td>Telefono</td>
+				<td>Correo</td>
+				<td>Fecha_ingreso_sep</td>
+				<td>Fecha_ingreso_zona</td>
+				<td>Fecha_ingreso_escuela</td>
+				<td>Clave</td>
+				<td>CURP</td>
+				<td>RFC</td>
+				<td>Grado_estudios</td>
+				<td>Contraseña</td>
 				<td>Editar</td>
 				<td>Eliminar</td>
+
 			</tr>
 		</thead>
 		<tfoot style="background-color: #ccc;color: white; font-weight: bold;">
 			<tr>
-				<td>nombre</td>
-				<td>cp</td>
-				<td>telefono</td>
-				<td>correo</td>
-				<td>fecha_ingreso_sep</td>
-				<td>fecha_ingreso_zona</td>
-				<td>fecha_ingreso_escuela</td>
-				<td>clave</td>
-				<td>curp</td>
-				<td>rfc</td>
-				<td>grado_estudios</td>
+				<td>Matricula</td>
+				<td>Nombre</td>
+				<td>CP</td>
+				<td>Telefono</td>
+				<td>Correo</td>
+				<td>Fecha_ingreso_sep</td>
+				<td>Fecha_ingreso_zona</td>
+				<td>Fecha_ingreso_escuela</td>
+				<td>Clave</td>
+				<td>CURP</td>
+				<td>RFC</td>
+				<td>Grado_estudios</td>
+				<td>Contraseña</td>
 				<td>Editar</td>
 				<td>Eliminar</td>
 			</tr>
@@ -64,6 +70,7 @@ $result=mysqli_query($conexion,$sql);
 			while ($mostrar=mysqli_fetch_row($result)) {
 				?>
 				<tr>
+				    <td><?php echo $mostrar[0] ?></td>
 					<td><?php echo $mostrar[1] ?></td>
 					<td><?php echo $mostrar[2] ?></td>
 					<td><?php echo $mostrar[3] ?></td>
@@ -75,6 +82,7 @@ $result=mysqli_query($conexion,$sql);
 					<td><?php echo $mostrar[9] ?></td>
 					<td><?php echo $mostrar[10] ?></td>
 					<td><?php echo $mostrar[11] ?></td>
+					<td><?php echo $mostrar[12] ?></td>
 					<td style="text-align: center;">
 						<span class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modalEditar" onclick="agregaFrmActualizar('<?php echo $mostrar[0] ?>')">
 							<span class="fa fa-pencil-square-o"></span>
@@ -85,6 +93,7 @@ $result=mysqli_query($conexion,$sql);
 							<span class="fa fa-trash"></span>
 						</span>
 					</td>
+					
 				</tr>
 				<?php 
 			}

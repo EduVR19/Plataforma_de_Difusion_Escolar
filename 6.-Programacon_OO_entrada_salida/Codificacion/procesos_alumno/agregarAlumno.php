@@ -5,8 +5,6 @@
 
 	$datos=array(
 		$_POST['nombre'],
-		$_POST['a_paterno'],
-		$_POST['a_materno'],
 		$_POST['sexo'],
 		$_POST['fecha_nac'],
 		$_POST['lugar_nac'],

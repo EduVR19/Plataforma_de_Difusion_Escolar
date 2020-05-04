@@ -4,6 +4,7 @@
 		public function agregarMaestro($datos){
 			$obj= new conectar();
 			$conexion=$obj->conexion();
+			$psswd = substr( md5(microtime()), 1, 8);
 
 			$sql="INSERT into maestro (	  nombre,
 										  cp,
@@ -15,7 +16,8 @@
 										  clave,
 										  curp,
 										  rfc,
-										  grado_estudios)
+										  grado_estudios,
+										  contraseña)
 									values ('$datos[0]',
 											'$datos[1]',
 											'$datos[2]',
@@ -26,7 +28,8 @@
 											'$datos[7]',
 											'$datos[8]',
 											'$datos[9]',
-											'$datos[10]')";
+											'$datos[10]',
+											'$psswd')";
 			return mysqli_query($conexion,$sql);
 		}
 

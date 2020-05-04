@@ -13,3 +13,7 @@
 04:10 p. m. 20/04/2020
 	- Se termino la interfaz de login
 	- En la documentacon se corrigio el modelo entidad-relacion, modelo relaciona, diccionarios de datos, pantallas E/S, se añadió las interfaces creadas hasta el momento (login, admin) y se agrego el pronostico de tiempos
+
+03:26 p. m. 03/05/2020
+	- Se añadió el campo para las contraseñas, cuando se registre un alumno se generará una contraseña segura que posteriormente se enviará al correo proporcionado por los padres
+	- 
