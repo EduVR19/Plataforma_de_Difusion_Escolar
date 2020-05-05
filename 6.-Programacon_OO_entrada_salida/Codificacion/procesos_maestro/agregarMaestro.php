@@ -8,13 +8,12 @@
 		$_POST['cp'],
 		$_POST['telefono'],
 		$_POST['correo'],
-		$_POST['fecha_ingreso_sep'],
-		$_POST['fecha_ingreso_zona'],
-		$_POST['fecha_ingreso_escuela'],
+		$_POST['fecha_ingreso'],
 		$_POST['clave'],
 		$_POST['curp'],
 		$_POST['rfc'],
-		$_POST['grado_estudios']
+		$_POST['grado_estudios'],
+		$_POST['id_grupo']
 				);
 
 	echo $obj->agregarMaestro($datos);

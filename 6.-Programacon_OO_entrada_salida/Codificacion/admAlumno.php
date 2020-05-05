@@ -36,6 +36,8 @@
 		      <a class="nav-link" href="admAlumno.php">Alumnos</a>
 		   	<li class="nav-item active">
 		      <a class="nav-link" href="admMaestro.php">Maestros</a>
+		  	<li class="nav-item active">
+		      <a class="nav-link" href="index.php">Salir</a>
 		  </ul>
 		</nav>
 	</div>
@@ -82,6 +84,10 @@
 					<form id="frmnuevo">
 						<label>nombre</label>
 						<input type="text" class="form-control input-sm" id="nombre" name="nombre">
+						<label>nombre_tutor</label>
+						<input type="text" class="form-control input-sm" id="nombre_tutor" name="nombre_tutor">
+						<label>correo</label>
+						<input type="text" class="form-control input-sm" id="correo" name="correo">
 						<label>sexo</label>
 						<input type="text" class="form-control input-sm" id="sexo" name="sexo">
 						<label>fecha_nac</label>
@@ -94,6 +100,8 @@
 						<input type="text" class="form-control input-sm" id="domicilio" name="domicilio">
 						<label>telefono</label>
 						<input type="text" class="form-control input-sm" id="telefono" name="telefono">
+						<label>id_grupo</label>
+						<input type="text" class="form-control input-sm" id="id_grupo" name="id_grupo">
 						
 					</form>
 				</div>
@@ -121,6 +129,10 @@
 						<input type="text" hidden="" id="idalumno" name="idalumno">
 						<label>nombreU</label>
 						<input type="text" class="form-control input-sm" id="nombreU" name="nombreU">
+						<label>nombre_tutorU</label>
+						<input type="text" class="form-control input-sm" id="nombre_tutorU" name="nombre_tutorU">
+						<label>correoU</label>
+						<input type="text" class="form-control input-sm" id="correoU" name="correoU">
 						<label>sexoU</label>
 						<input type="text" class="form-control input-sm" id="sexoU" name="sexoU">
 						<label>fecha_nacU</label>
@@ -135,7 +147,9 @@
 						<input type="text" class="form-control input-sm" id="telefonoU" name="telefonoU">
 						<label>ContraseñaU</label>
 						<input type="text" class="form-control input-sm" id="contraseñaU" name="contraseñaU">
-						
+						<label>id_grupoU</label>
+						<input type="text" class="form-control input-sm" id="id_grupoU" name="id_grupoU">
+
 					</form>
 				</div>
 				<div class="modal-footer">
@@ -208,12 +222,15 @@
 				datos=jQuery.parseJSON(r);
 				$('#idalumno').val(datos['id_alumno']);
 				$('#nombreU').val(datos['nombre']);
+				$('#nombre_tutorU').val(datos['nombre_tutor']);
+				$('#correoU').val(datos['correo']);
 				$('#sexoU').val(datos['sexo']);
 				$('#fecha_nacU').val(datos['fecha_nac']);
 				$('#lugar_nacU').val(datos['lugar_nac']);
 				$('#curpU').val(datos['curp']);
 				$('#domicilioU').val(datos['domicilio']);
 				$('#telefonoU').val(datos['telefono']);
+				$('#id_grupoU').val(datos['id_grupo']);
 				$('#contraseñaU').val(datos['contraseña']);
 			}
 		});

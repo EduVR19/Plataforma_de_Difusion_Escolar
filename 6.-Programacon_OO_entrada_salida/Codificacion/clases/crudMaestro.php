@@ -10,13 +10,12 @@
 										  cp,
 										  telefono,
 										  correo,
-										  fecha_ingreso_sep,
-										  fecha_ingreso_zona,
-										  fecha_ingreso_escuela,
+										  fecha_ingreso,
 										  clave,
 										  curp,
 										  rfc,
 										  grado_estudios,
+										  id_grupo,
 										  contraseña)
 									values ('$datos[0]',
 											'$datos[1]',
@@ -28,7 +27,6 @@
 											'$datos[7]',
 											'$datos[8]',
 											'$datos[9]',
-											'$datos[10]',
 											'$psswd')";
 			return mysqli_query($conexion,$sql);
 		}
@@ -42,13 +40,12 @@
 							  cp,
 							  telefono,
 							  correo,
-							  fecha_ingreso_sep,
-							  fecha_ingreso_zona,
-							  fecha_ingreso_escuela,
+							  fecha_ingreso,
 							  clave,
 							  curp,
 							  rfc,
-							  grado_estudios
+							  grado_estudios,
+							  id_grupo
 					from maestro 
 					where id_maestro='$idmaestro'";
 			$result=mysqli_query($conexion,$sql);
@@ -60,13 +57,12 @@
 				'cp' => $ver[2],
 				'telefono' => $ver[3],
 				'correo' => $ver[4],
-				'fecha_ingreso_sep' => $ver[5],
-				'fecha_ingreso_zona' => $ver[6],
-				'fecha_ingreso_escuela' => $ver[7],
-				'clave' => $ver[8],
-				'curp' => $ver[9],
-				'rfc' => $ver[10],
-				'grado_estudios' => $ver[11]
+				'fecha_ingreso' => $ver[5],
+				'clave' => $ver[6],
+				'curp' => $ver[7],
+				'rfc' => $ver[8],
+				'grado_estudios' => $ver[9],
+				'id_grupo' => $ver[10]
 				);
 			return $datos;
 		}
@@ -79,14 +75,13 @@
 										  cp='$datos[1]',
 									telefono='$datos[2]',
 									  correo='$datos[3]',
-						   fecha_ingreso_sep='$datos[4]',
-						  fecha_ingreso_zona='$datos[5]',
-					   fecha_ingreso_escuela='$datos[6]',
-								  	   clave='$datos[7]',
-									    curp='$datos[8]',
-									     rfc='$datos[9]',
-							  grado_estudios='$datos[10]'
-						where id_maestro='$datos[11]'";
+						   fecha_ingreso='$datos[4]',
+								  	   clave='$datos[5]',
+									    curp='$datos[6]',
+									     rfc='$datos[7]',
+							  grado_estudios='$datos[8]',
+							  		id_grupo='$datos[9]'
+						where id_maestro='$datos[10]'";
 			return mysqli_query($conexion,$sql);
 		}
 		public function eliminarMaestro($idmaestro){

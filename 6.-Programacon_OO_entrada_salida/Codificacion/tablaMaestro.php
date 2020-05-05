@@ -9,13 +9,12 @@ nombre,
 cp,
 telefono,
 correo,
-fecha_ingreso_sep,
-fecha_ingreso_zona,
-fecha_ingreso_escuela,
+fecha_ingreso,
 clave,
 curp,
 rfc,
 grado_estudios,
+id_grupo,
 contraseña
 from maestro";
 $result=mysqli_query($conexion,$sql);
@@ -33,13 +32,12 @@ $result=mysqli_query($conexion,$sql);
 				<td>CP</td>
 				<td>Telefono</td>
 				<td>Correo</td>
-				<td>Fecha_ingreso_sep</td>
-				<td>Fecha_ingreso_zona</td>
-				<td>Fecha_ingreso_escuela</td>
+				<td>Fecha de Ingreso</td>
 				<td>Clave</td>
 				<td>CURP</td>
 				<td>RFC</td>
-				<td>Grado_estudios</td>
+				<td>Grado de estudios</td>
+				<td>Grupo</td>
 				<td>Contraseña</td>
 				<td>Editar</td>
 				<td>Eliminar</td>
@@ -53,13 +51,12 @@ $result=mysqli_query($conexion,$sql);
 				<td>CP</td>
 				<td>Telefono</td>
 				<td>Correo</td>
-				<td>Fecha_ingreso_sep</td>
-				<td>Fecha_ingreso_zona</td>
-				<td>Fecha_ingreso_escuela</td>
+				<td>Fecha de Ingreso</td>
 				<td>Clave</td>
 				<td>CURP</td>
 				<td>RFC</td>
-				<td>Grado_estudios</td>
+				<td>Grado de estudios</td>
+				<td>Grupo</td>
 				<td>Contraseña</td>
 				<td>Editar</td>
 				<td>Eliminar</td>
@@ -82,7 +79,6 @@ $result=mysqli_query($conexion,$sql);
 					<td><?php echo $mostrar[9] ?></td>
 					<td><?php echo $mostrar[10] ?></td>
 					<td><?php echo $mostrar[11] ?></td>
-					<td><?php echo $mostrar[12] ?></td>
 					<td style="text-align: center;">
 						<span class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modalEditar" onclick="agregaFrmActualizar('<?php echo $mostrar[0] ?>')">
 							<span class="fa fa-pencil-square-o"></span>

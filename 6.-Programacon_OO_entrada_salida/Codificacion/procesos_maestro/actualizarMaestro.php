@@ -8,13 +8,12 @@
 		$_POST['cpU'],
 		$_POST['telefonoU'],
 		$_POST['correoU'],
-		$_POST['fecha_ingreso_sepU'],
-		$_POST['fecha_ingreso_zonaU'],
-		$_POST['fecha_ingreso_escuelaU'],
+		$_POST['fecha_ingreso'],
 		$_POST['claveU'],
 		$_POST['curpU'],
 		$_POST['rfcU'],
 		$_POST['grado_estudiosU'],
+		$_POST['id_grupoU'],
 		$_POST['idmaestro']
 				);
 

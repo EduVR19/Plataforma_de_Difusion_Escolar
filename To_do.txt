@@ -15,5 +15,11 @@
 	- En la documentacon se corrigio el modelo entidad-relacion, modelo relaciona, diccionarios de datos, pantallas E/S, se añadió las interfaces creadas hasta el momento (login, admin) y se agrego el pronostico de tiempos
 
 03:26 p. m. 03/05/2020
-	- Se añadió el campo para las contraseñas, cuando se registre un alumno se generará una contraseña segura que posteriormente se enviará al correo proporcionado por los padres
-	- 
+	- Se añadio el campo para las contraseñas, cuando se registre un alumno se generará una contraseña segura que posteriormente se enviará al correo proporcionado por los padres
+	- Se crearon las interfaces para alumno y maestro (maqueta)
+
+08:38 a. m. 05/05/2020
+	- Las tablas ya estan creadas con sus atributos hay un respaldo en la carpeta ''db'', las ventantas de administrador de maestros y alumnos ya tienen todos sus atributos y las paginas estan enlazadas
+	- Falta lograr las sesiones, enviar la contraseña al correo
+	- Falta las acciones de las ventanas de maestro y alumno
+	- Falta checar que podemos exportar como PDF de acuerdo a las tablas en phpMyAdmin

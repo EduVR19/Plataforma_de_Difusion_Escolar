@@ -41,7 +41,9 @@
 		  	<li class="nav-item active">
 		      <a class="nav-link" href="#">Asistencia</a>
 		   	<li class="nav-item active">
-		      <a class="nav-link" href="#">Eventos</a>   
+		      <a class="nav-link" href="#">Eventos</a> 
+		    <li class="nav-item active">
+		      <a class="nav-link" href="index.php">Salir</a>  
 		  </ul>
 		</nav>
 	</div>

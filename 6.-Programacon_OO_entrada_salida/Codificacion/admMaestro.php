@@ -36,6 +36,8 @@
 		      <a class="nav-link" href="admAlumno.php">Alumnos</a>
 		   	<li class="nav-item active">
 		      <a class="nav-link" href="admMaestro.php">Maestros</a>
+		    <li class="nav-item active ">
+		      <a class="nav-link" href="index.php">Salir</a>
 		  </ul>
 		</nav>
 	</div>
@@ -83,12 +85,8 @@
 						<input type="text" class="form-control input-sm" id="telefono" name="telefono">
 						<label>correo</label>
 						<input type="text" class="form-control input-sm" id="correo" name="correo">
-						<label>fecha_ingreso_sep</label>
-						<input type="text" class="form-control input-sm" id="fecha_ingreso_sep" name="fecha_ingreso_sep">
-						<label>fecha_ingreso_zona</label>
-						<input type="text" class="form-control input-sm" id="fecha_ingreso_zona" name="fecha_ingreso_zona">
-						<label>fecha_ingreso_escuela</label>
-						<input type="text" class="form-control input-sm" id="fecha_ingreso_escuela" name="fecha_ingreso_escuela">
+						<label>fecha_ingreso</label>
+						<input type="text" class="form-control input-sm" id="fecha_ingreso" name="fecha_ingreso">
 						<label>clave</label>
 						<input type="text" class="form-control input-sm" id="clave" name="clave">
 						<label>curp</label>
@@ -97,6 +95,9 @@
 						<input type="text" class="form-control input-sm" id="rfc" name="rfc">
 						<label>grado_estudios</label>
 						<input type="text" class="form-control input-sm" id="grado_estudios" name="grado_estudios">
+						<label>id_grupo</label>
+						<input type="text" class="form-control input-sm" id="id_grupo" name="id_grupo">
+						
 					</form>
 				</div>
 				<div class="modal-footer">
@@ -129,12 +130,8 @@
 						<input type="text" class="form-control input-sm" id="telefonoU" name="telefonoU">
 						<label>correoU</label>
 						<input type="text" class="form-control input-sm" id="correoU" name="correoU">
-						<label>fecha_ingreso_sepU</label>
-						<input type="text" class="form-control input-sm" id="fecha_ingreso_sepU" name="fecha_ingreso_sepU">
-						<label>fecha_ingreso_zonaU</label>
-						<input type="text" class="form-control input-sm" id="fecha_ingreso_zonaU" name="fecha_ingreso_zonaU">
-						<label>fecha_ingreso_escuelaU</label>
-						<input type="text" class="form-control input-sm" id="fecha_ingreso_escuelaU" name="fecha_ingreso_escuelaU">
+						<label>fecha_ingresoU</label>
+						<input type="text" class="form-control input-sm" id="fecha_ingresoU" name="fecha_ingresoU">
 						<label>claveU</label>
 						<input type="text" class="form-control input-sm" id="claveU" name="claveU">
 						<label>curpU</label>
@@ -143,6 +140,9 @@
 						<input type="text" class="form-control input-sm" id="rfcU" name="rfcU">
 						<label>grado_estudiosU</label>
 						<input type="text" class="form-control input-sm" id="grado_estudiosU" name="grado_estudiosU">
+						<label>id_grupoU</label>
+						<input type="text" class="form-control input-sm" id="id_grupoU" name="id_grupoU">
+						
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -216,13 +216,12 @@
 				$('#cpU').val(datos['cp']);
 				$('#telefonoU').val(datos['telefono']);
 				$('#correoU').val(datos['correo']);
-				$('#fecha_ingreso_sepU').val(datos['fecha_ingreso_sep']);
-				$('#fecha_ingreso_zonaU').val(datos['fecha_ingreso_zona']);
-				$('#fecha_ingreso_escuelaU').val(datos['fecha_ingreso_escuela']);
+				$('#fecha_ingresoU').val(datos['fecha_ingreso']);
 				$('#claveU').val(datos['clave']);
 				$('#curpU').val(datos['curp']);
 				$('#rfcU').val(datos['rfc']);
 				$('#grado_estudiosU').val(datos['grado_estudios']);
+				$('#id_grupoU').val(datos['id_grupo']);
 			}
 		});
 	}
