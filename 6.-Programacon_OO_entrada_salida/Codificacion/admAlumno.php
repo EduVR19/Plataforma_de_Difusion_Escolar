@@ -36,8 +36,10 @@
 		      <a class="nav-link" href="admAlumno.php">Alumnos</a>
 		   	<li class="nav-item active">
 		      <a class="nav-link" href="admMaestro.php">Maestros</a>
-		  	<li class="nav-item active">
-		      <a class="nav-link" href="index.php">Salir</a>
+		      <li class="nav-item active">
+		      <a class="nav-link" href="asignaturas.php">Ver Materias</a>
+		     <li class="nav-item active">
+		      <a class="nav-link" href="cerrar.php">Salir</a>
 		  </ul>
 		</nav>
 	</div>
@@ -56,6 +58,8 @@
 					<div class="card-body">
 						<span class="btn btn-primary" data-toggle="modal" data-target="#agregarnuevosdatosmodal">
 							Agregar nuevo <span class="fa fa-plus-circle"></span>
+						</span>
+						<span><a class="btn btn-danger" href="pdf/ListadoDeAlumnos.php" role="button">PDF</a>
 						</span>
 						<hr>
 						<div id="tablaDatatable"></div>
@@ -82,25 +86,23 @@
 				</div>
 				<div class="modal-body">
 					<form id="frmnuevo">
-						<label>nombre</label>
+						<label>Nombre</label>
 						<input type="text" class="form-control input-sm" id="nombre" name="nombre">
-						<label>nombre_tutor</label>
+						<label>Nombre del tutor</label>
 						<input type="text" class="form-control input-sm" id="nombre_tutor" name="nombre_tutor">
 						<label>correo</label>
 						<input type="text" class="form-control input-sm" id="correo" name="correo">
-						<label>sexo</label>
-						<input type="text" class="form-control input-sm" id="sexo" name="sexo">
-						<label>fecha_nac</label>
+						<label>Fecha de nacimiento</label>
 						<input type="text" class="form-control input-sm" id="fecha_nac" name="fecha_nac">
-						<label>lugar_nac</label>
+						<label>Lugar de nacimiento</label>
 						<input type="text" class="form-control input-sm" id="lugar_nac" name="lugar_nac">
-						<label>curp</label>
+						<label>CURP</label>
 						<input type="text" class="form-control input-sm" id="curp" name="curp">
-						<label>domicilio</label>
+						<label>Domicilio</label>
 						<input type="text" class="form-control input-sm" id="domicilio" name="domicilio">
-						<label>telefono</label>
+						<label>Teléfono</label>
 						<input type="text" class="form-control input-sm" id="telefono" name="telefono">
-						<label>id_grupo</label>
+						<label>Grupo</label>
 						<input type="text" class="form-control input-sm" id="id_grupo" name="id_grupo">
 						
 					</form>
@@ -127,29 +129,27 @@
 				<div class="modal-body">
 					<form id="frmnuevoU">
 						<input type="text" hidden="" id="idalumno" name="idalumno">
-						<label>nombreU</label>
+						<label>Nombre</label>
 						<input type="text" class="form-control input-sm" id="nombreU" name="nombreU">
-						<label>nombre_tutorU</label>
+						<label>Nombre del tutor</label>
 						<input type="text" class="form-control input-sm" id="nombre_tutorU" name="nombre_tutorU">
-						<label>correoU</label>
+						<label>correo</label>
 						<input type="text" class="form-control input-sm" id="correoU" name="correoU">
-						<label>sexoU</label>
-						<input type="text" class="form-control input-sm" id="sexoU" name="sexoU">
-						<label>fecha_nacU</label>
+						<label>Fecha de nacimiento</label>
 						<input type="text" class="form-control input-sm" id="fecha_nacU" name="fecha_nacU">
-						<label>lugar_nacU</label>
+						<label>Lugar de nacimiento</label>
 						<input type="text" class="form-control input-sm" id="lugar_nacU" name="lugar_nacU">
-						<label>curpU</label>
+						<label>CURP</label>
 						<input type="text" class="form-control input-sm" id="curpU" name="curpU">
-						<label>domicilioU</label>
+						<label>Domicilio</label>
 						<input type="text" class="form-control input-sm" id="domicilioU" name="domicilioU">
-						<label>telefonoU</label>
+						<label>Teléfono</label>
 						<input type="text" class="form-control input-sm" id="telefonoU" name="telefonoU">
-						<label>ContraseñaU</label>
-						<input type="text" class="form-control input-sm" id="contraseñaU" name="contraseñaU">
-						<label>id_grupoU</label>
+						<label>Grupo</label>
 						<input type="text" class="form-control input-sm" id="id_grupoU" name="id_grupoU">
-
+						<label>Contraseña</label>
+						<input type="text" class="form-control input-sm" id="contraseñaU" name="contraseñaU">
+						
 					</form>
 				</div>
 				<div class="modal-footer">
@@ -161,6 +161,7 @@
 	</div>
 </body>
 </html>
+
 
 
 <script type="text/javascript">
@@ -224,7 +225,6 @@
 				$('#nombreU').val(datos['nombre']);
 				$('#nombre_tutorU').val(datos['nombre_tutor']);
 				$('#correoU').val(datos['correo']);
-				$('#sexoU').val(datos['sexo']);
 				$('#fecha_nacU').val(datos['fecha_nac']);
 				$('#lugar_nacU').val(datos['lugar_nac']);
 				$('#curpU').val(datos['curp']);

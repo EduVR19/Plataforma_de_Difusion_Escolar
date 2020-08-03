@@ -5,16 +5,14 @@
 
 	$datos=array(
 		$_POST['nombreU'],
-		$_POST['cpU'],
+		$_POST['domicilioU'],
 		$_POST['telefonoU'],
 		$_POST['correoU'],
-		$_POST['fecha_ingreso'],
-		$_POST['claveU'],
-		$_POST['curpU'],
-		$_POST['rfcU'],
+		$_POST['fecha_ingresoU'],
 		$_POST['grado_estudiosU'],
 		$_POST['id_grupoU'],
-		$_POST['idmaestro']
+		$_POST['idmaestro'],
+		$_POST['contraseñaU']
 				);
 
 	echo $obj->actualizarMaestro($datos);

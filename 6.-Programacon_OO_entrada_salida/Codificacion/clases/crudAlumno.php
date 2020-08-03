@@ -9,7 +9,6 @@
 			$sql="INSERT into alumno (nombre,
 									nombre_tutor,
 									correo,
-									sexo,
 									fecha_nac,
 									lugar_nac,
 									curp,
@@ -26,7 +25,6 @@
 											'$datos[6]',
 											'$datos[7]',
 											'$datos[8]',
-											'$datos[9]',
 											'$psswd')";
 			return mysqli_query($conexion,$sql);
 		}
@@ -39,7 +37,6 @@
 							nombre,
 							nombre_tutor,
 							correo,
-							sexo,
 							fecha_nac,
 							lugar_nac,
 							curp,
@@ -57,14 +54,13 @@
 				'nombre' => $ver[1],
 				'nombre_tutor' => $ver[2],
 				'correo' => $ver[3],
-				'sexo' => $ver[4],
-				'fecha_nac' => $ver[5],
-				'lugar_nac' => $ver[6],
-				'curp' => $ver[7],
-				'domicilio' => $ver[8],
-				'telefono' => $ver[9],
-				'id_grupo' => $ver[10],
-				'contraseña' => $ver[11]
+				'fecha_nac' => $ver[4],
+				'lugar_nac' => $ver[5],
+				'curp' => $ver[6],
+				'domicilio' => $ver[7],
+				'telefono' => $ver[8],
+				'id_grupo' => $ver[9],
+				'contraseña' => $ver[10]
 				);
 			return $datos;
 		}
@@ -74,17 +70,16 @@
 			$conexion=$obj->conexion();
 
 			$sql="UPDATE alumno set        nombre='$datos[0]',
-										nombre_tutor='$datos[1]',
-										correo='$datos[2]',
-											 sexo='$datos[3]',
-										fecha_nac='$datos[4]',
-										lugar_nac='$datos[5]',
-											 curp='$datos[6]',
-										domicilio='$datos[7]',
-										 telefono='$datos[8]',
-										 id_grupo='$datos[9]',
-										 contraseña='$datos[11]'
-						where id_alumno='$datos[10]'";
+									 nombre_tutor='$datos[1]',
+									 	   correo='$datos[2]',
+										fecha_nac='$datos[3]',
+										lugar_nac='$datos[4]',
+											 curp='$datos[5]',
+										domicilio='$datos[6]',
+										 telefono='$datos[7]',
+										id_grupo='$datos[8]',
+									   contraseña= '$datos[10]'
+						where id_alumno='$datos[9]'";
 			return mysqli_query($conexion,$sql);
 		}
 		public function eliminarAlumno($idalumno){

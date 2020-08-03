@@ -49,7 +49,7 @@
 		<div class="row.row-eq-height" style="display: flex;">
 
 			<div class="col-sm-8">
-				<div class="card text-left">
+				<div class="card text-left" style="height:500px">
 					<div class="card-header">
 						Eventos y noticias
 					</div>
@@ -58,7 +58,7 @@
 					<div class="card-body">
 					        <div class="container">
 					            <div id="login-row" class="row justify-content-center align-items-center">
-					                <div id="login-column" class="col-md-6">
+					                <div id="login-column" class="col-md-12">
 					                    <div id="login-box" class="col-md-12">
 					                        <div id="demo" class="carousel slide" data-ride="carousel">
 											  <ul class="carousel-indicators">
@@ -68,24 +68,24 @@
 											  </ul>
 											  <div class="carousel-inner">
 											    <div class="carousel-item active">
-											      <img src="img\foto.jpg" alt="Los Angeles" width="1100" height="500">
+											      <img src="img\foto.jpg" alt="" width="1100" height="500">
 											      <div class="carousel-caption">
-											        <h3>Los Angeles</h3>
-											        <p>We had such a great time in LA!</p>
+											        <h3></h3>
+											        <p></p>
 											      </div>   
 											    </div>
 											    <div class="carousel-item">
-											      <img src="img\logo_2.png" alt="Chicago" width="1100" height="500">
+											      <img src="img\foto2.jpg" alt="" width="1100" height="500">
 											      <div class="carousel-caption">
-											        <h3>Chicago</h3>
-											        <p>Thank you, Chicago!</p>
+											        <h3></h3>
+											        <p></p>
 											      </div>   
 											    </div>
 											    <div class="carousel-item">
-											      <img src="img\logo_2.png" alt="New York" width="1100" height="500">
+											      <img src="img\foto3.jpg" alt="" width="1100" height="500">
 											      <div class="carousel-caption">
-											        <h3>New York</h3>
-											        <p>We love the Big Apple!</p>
+											        <h3></h3>
+											        <p></p>
 											      </div>   
 											    </div>
 											  </div>
@@ -109,16 +109,16 @@
 
 	<!--*****************INICIO DE LOGIN************-->
 			<div class="col-sm-4">
-				<div class="card text-left">
+				<div class="card text-left" style="height:500px">
 					<div class="card-header">
 						Iniciar sesión
 					</div>
 					<div class="card-body">
 					        <div class="container">
 					            <div id="login-row" class="row justify-content-center align-items-center">
-					                <div id="login-column" class="col-md-6">
-					                    <div id="login-box" class="col-md-12">
-					                        <form id="login-form" class="form" action="" method="post">
+					                <div id="login-column" class="col-md-12">
+					                    <div id="login-box" class="col-md-12"><!-- Se crea la conexion del form con la sesion-->
+					                        <form id="login-form" class="form" action="clases/iniciarSesion.php" method="post">
 					                            <h3 class="text-center text-danger">Login</h3>
 					                            <div class="form-group">
 					                                <label for="username" class="text-dark">Usuario:</label><br>

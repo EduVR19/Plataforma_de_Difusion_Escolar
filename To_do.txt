@@ -23,3 +23,7 @@
 	- Falta lograr las sesiones, enviar la contraseña al correo
 	- Falta las acciones de las ventanas de maestro y alumno
 	- Falta checar que podemos exportar como PDF de acuerdo a las tablas en phpMyAdmin
+
+11:45 a. m. 03/08/2020
+	- Proyecto funcionando, la base de datos ya está conectada, las ventanas están funcionando
+	- Lo que faltaría checar es la seguridad en las sesiones

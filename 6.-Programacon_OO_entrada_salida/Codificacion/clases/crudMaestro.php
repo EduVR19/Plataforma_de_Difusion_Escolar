@@ -6,14 +6,11 @@
 			$conexion=$obj->conexion();
 			$psswd = substr( md5(microtime()), 1, 8);
 
-			$sql="INSERT into maestro (	  nombre,
-										  cp,
+			$sql="INSERT into maestro (nombre,
+										  domicilio,
 										  telefono,
 										  correo,
 										  fecha_ingreso,
-										  clave,
-										  curp,
-										  rfc,
 										  grado_estudios,
 										  id_grupo,
 										  contraseña)
@@ -24,9 +21,6 @@
 											'$datos[4]',
 											'$datos[5]',
 											'$datos[6]',
-											'$datos[7]',
-											'$datos[8]',
-											'$datos[9]',
 											'$psswd')";
 			return mysqli_query($conexion,$sql);
 		}
@@ -37,15 +31,13 @@
 
 			$sql="SELECT   id_maestro,
 							  nombre,
-							  cp,
+							  domicilio,
 							  telefono,
 							  correo,
 							  fecha_ingreso,
-							  clave,
-							  curp,
-							  rfc,
 							  grado_estudios,
-							  id_grupo
+							  id_grupo,
+							  contraseña
 					from maestro 
 					where id_maestro='$idmaestro'";
 			$result=mysqli_query($conexion,$sql);
@@ -54,15 +46,13 @@
 			$datos=array(
 				'id_maestro' => $ver[0],
 				'nombre' => $ver[1],
-				'cp' => $ver[2],
+				'domicilio' => $ver[2],
 				'telefono' => $ver[3],
 				'correo' => $ver[4],
 				'fecha_ingreso' => $ver[5],
-				'clave' => $ver[6],
-				'curp' => $ver[7],
-				'rfc' => $ver[8],
-				'grado_estudios' => $ver[9],
-				'id_grupo' => $ver[10]
+				'grado_estudios' => $ver[6],
+				'id_grupo' => $ver[7],
+				'contraseña' => $ver[8]
 				);
 			return $datos;
 		}
@@ -72,16 +62,14 @@
 			$conexion=$obj->conexion();
 
 			$sql="UPDATE maestro set  nombre='$datos[0]',
-										  cp='$datos[1]',
+								   domicilio='$datos[1]',
 									telefono='$datos[2]',
 									  correo='$datos[3]',
-						   fecha_ingreso='$datos[4]',
-								  	   clave='$datos[5]',
-									    curp='$datos[6]',
-									     rfc='$datos[7]',
-							  grado_estudios='$datos[8]',
-							  		id_grupo='$datos[9]'
-						where id_maestro='$datos[10]'";
+							   fecha_ingreso='$datos[4]',
+							  grado_estudios='$datos[5]',
+							        id_grupo='$datos[6]',
+								  contraseña='$datos[8]'
+						where id_maestro='$datos[7]'";
 			return mysqli_query($conexion,$sql);
 		}
 		public function eliminarMaestro($idmaestro){

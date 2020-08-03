@@ -7,13 +7,12 @@
 		$_POST['nombreU'],
 		$_POST['nombre_tutorU'],
 		$_POST['correoU'],
-		$_POST['sexoU'],
 		$_POST['fecha_nacU'],
 		$_POST['lugar_nacU'],
 		$_POST['curpU'],
 		$_POST['domicilioU'],
 		$_POST['telefonoU'],
-		$_POST['id_grupo'],
+		$_POST['id_grupoU'],
 		$_POST['idalumno'],
 		$_POST['contraseñaU']
 				);
